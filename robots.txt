@@ -1,2 +1,16 @@
 User-agent: *
-Disallow: /
+Disallow: /wp-includes
+Disallow: /wp-content/plugins
+Disallow: /wp-content/cache
+Disallow: /*?
+Disallow: /?s=
+Allow: /wp-includes/*.css
+Allow: /wp-includes/*.js
+Allow: /wp-content/plugins/*.css
+Allow: /wp-content/plugins/*.js
+Allow: /*.css
+Allow: /*.js
+
+User-agent: Yandex
+Clean-param: customize_changeset_uuid
+Sitemap: https://edakitaya.vercel.app/sitemap_index.xml
